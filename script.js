@@ -81,7 +81,7 @@ function pickButtonPosition(buttonRect, point) {
   let best = { x: bounds.fallbackX, y: bounds.fallbackY };
   let bestDistance = -1;
 
-  // Несколько попыток нужны, чтобы кнопка не перепрыгивала прямо под палец.
+  // несколько попыток нужны, чтобы кнопка не перепрыгивала прямо под палец.
   for (let attempt = 0; attempt < 12; attempt += 1) {
     const candidate = {
       x: randomBetween(bounds.minX, bounds.maxX),

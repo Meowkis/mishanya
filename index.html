@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Приглашение на свидание</title>
+  <title>приглашение на свидание</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -20,7 +20,7 @@
       <span class="spark spark-two">✧</span>
     </div>
 
-    <section class="postcard" aria-label="Интерактивное приглашение">
+    <section class="postcard" aria-label="интерактивное приглашение">
       <div class="screen is-active" data-screen="intro">
         <p class="eyebrow">маленький важный вопрос</p>
         <h1>
@@ -30,8 +30,8 @@
         </h1>
 
         <div class="actions intro-actions">
-          <button class="btn btn-primary" type="button" data-next="confirm">Да</button>
-          <button class="btn btn-ghost" id="noBtn" type="button">Нет</button>
+          <button class="btn btn-primary" type="button" data-next="confirm">да</button>
+          <button class="btn btn-ghost" id="noBtn" type="button">нет</button>
         </div>
       </div>
 
@@ -42,44 +42,44 @@
         </h2>
         <br><br><br><br>
         <div class="actions stacked">
-          <button class="btn btn-primary" type="button" data-next="choices">Да, правда</button>
-          <button class="btn btn-secondary" type="button" data-next="choices">Да-да, я согласна</button>
+          <button class="btn btn-primary" type="button" data-next="choices">да, правда</button>
+          <button class="btn btn-secondary" type="button" data-next="choices">да-да, я согласна</button>
         </div>
       </div>
 
       <div class="screen" data-screen="choices" hidden>
         <p class="eyebrow">теперь самое приятное</p>
-        <h2>Тогда выбери, как мы проведём этот день</h2>
+        <h2>тогда выбери, как мы проведём этот день</h2>
 
         <div class="date-options">
-          <button class="date-card" type="button" data-choice="Пикник и кино под открытым небом">
+          <button class="date-card" type="button" data-choice="пикник и кино под открытым небом">
             <span class="date-icon" aria-hidden="true">🧺</span>
             <span class="date-copy">
-              <strong>Пикник и кино под открытым небом</strong>
+              <strong>пикник и кино под открытым небом</strong>
               <span>
-                Сначала что-нибудь вкусное, плед, спокойная атмосфера, а потом фильм
+                сначала что-нибудь вкусное, плед, спокойная атмосфера, а потом фильм
                 под вечерним небом.
               </span>
             </span>
           </button>
 
-          <button class="date-card" type="button" data-choice="Котокафе и прогулка по парку">
+          <button class="date-card" type="button" data-choice="котокафе и прогулка по парку">
             <span class="date-icon" aria-hidden="true">☕</span>
             <span class="date-copy">
-              <strong>Котокафе и прогулка по парку</strong>
+              <strong>котокафе и прогулка по парку</strong>
               <span>
-                Коты, чай/кофе, немного уюта, а потом спокойная прогулка там, где
+                коты, чай/кофе, немного уюта, а потом спокойная прогулка там, где
                 можно просто болтать обо всём.
               </span>
             </span>
           </button>
 
-          <button class="date-card" type="button" data-choice="Зиплайн и маленькое приключение">
+          <button class="date-card" type="button" data-choice="зиплайн и маленькое приключение">
             <span class="date-icon" aria-hidden="true">🌤️</span>
             <span class="date-copy">
-              <strong>Зиплайн и маленькое приключение</strong>
+              <strong>зиплайн и маленькое приключение</strong>
               <span>
-                Немного адреналина, красивые виды и свидание, которое точно не будет
+                немного адреналина, красивые виды и свидание, которое точно не будет
                 обычным.
               </span>
             </span>
@@ -89,19 +89,19 @@
 
       <div class="screen" data-screen="final" hidden>
         <p class="eyebrow">ура. очень ура</p>
-        <h2>Я очень рад, что ты согласилась.</h2>
-        <p class="lead">Значит, 12 июля — наш день.</p>
+        <h2>я очень рад, что ты согласилась.</h2>
+        <p class="lead">значит, 12 июля — наш день.</p>
 
         <div class="plan" aria-live="polite">
-          <span>Наш план:</span>
-          <strong id="selectedPlan">Пикник и кино под открытым небом</strong>
+          <span>наш план:</span>
+          <strong id="selectedPlan">пикник и кино под открытым небом</strong>
         </div>
 
         <p class="note">
-          Теперь мне осталось только постараться сделать этот день правда классным.
+          теперь мне осталось только постараться сделать этот день правда классным.
         </p>
 
-        <button class="btn btn-small" type="button" data-next="choices">Вернуться к выбору</button>
+        <button class="btn btn-small" type="button" data-next="choices">вернуться к выбору</button>
       </div>
     </section>
   </main>
