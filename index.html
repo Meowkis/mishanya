@@ -1,115 +1,114 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Приглашение на свидание</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="app" aria-live="polite">
-      <div class="decor" aria-hidden="true">
-        <span class="soft-orb orb-one"></span>
-        <span class="soft-orb orb-two"></span>
-        <span class="soft-orb orb-three"></span>
-        <span class="heart heart-one">♡</span>
-        <span class="heart heart-two">♡</span>
-        <span class="spark spark-one">✦</span>
-        <span class="spark spark-two">✧</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Приглашение на свидание</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="app" aria-live="polite">
+    <div class="decor" aria-hidden="true">
+      <span class="soft-orb orb-one"></span>
+      <span class="soft-orb orb-two"></span>
+      <span class="soft-orb orb-three"></span>
+      <span class="heart heart-one">♡</span>
+      <span class="heart heart-two">♡</span>
+      <span class="spark spark-one">✦</span>
+      <span class="spark spark-two">✧</span>
+    </div>
+
+    <section class="postcard" aria-label="Интерактивное приглашение">
+      <div class="screen is-active" data-screen="intro">
+        <p class="eyebrow">маленький важный вопрос</p>
+        <h1>
+          Я приглашаю типя на свидание 12 июля
+          <span>ти согласна со мной пойти?</span>
+        </h1>
+
+        <div class="actions intro-actions">
+          <button class="btn btn-primary" type="button" data-next="confirm">Да</button>
+          <button class="btn btn-ghost" id="noBtn" type="button">Нет</button>
+        </div>
       </div>
 
-      <section class="postcard" aria-label="Интерактивное приглашение">
-        <div class="screen is-active" data-screen="intro">
-          <p class="eyebrow">маленький важный вопрос</p>
-          <h1>
-            Я приглашаю тебя на свидание 12 июля.
-            <span>ти согласна со мной пойти?</span>
-          </h1>
+      <div class="screen" data-screen="confirm" hidden>
+        <p class="eyebrow">секундочку</p>
+        <h2>
+          Ты правда согласна?<br />
+          Правдя?<br />
+          Да??
+        </h2>
+        <p class="note">я просто должен убедиться, это очень важный момент</p>
 
-          <div class="actions intro-actions">
-            <button class="btn btn-primary" type="button" data-next="confirm">Да</button>
-            <button class="btn btn-ghost" id="noBtn" type="button">Нет</button>
-          </div>
+        <div class="actions stacked">
+          <button class="btn btn-primary" type="button" data-next="choices">Да, правда</button>
+          <button class="btn btn-secondary" type="button" data-next="choices">Да-да, я согласна</button>
         </div>
+      </div>
 
-        <div class="screen" data-screen="confirm" hidden>
-          <p class="eyebrow">секундочку</p>
-          <h2>
-            Ты правда согласна?<br />
-            Правдя?<br />
-            Да??
-          </h2>
-          <p class="note">я просто должен убедиться, это очень важный момент</p>
+      <div class="screen" data-screen="choices" hidden>
+        <p class="eyebrow">теперь самое приятное</p>
+        <h2>Тогда выбери, как мы проведём этот день</h2>
 
-          <div class="actions stacked">
-            <button class="btn btn-primary" type="button" data-next="choices">Да, правда</button>
-            <button class="btn btn-secondary" type="button" data-next="choices">Да-да, я согласна</button>
-          </div>
-        </div>
-
-        <div class="screen" data-screen="choices" hidden>
-          <p class="eyebrow">теперь самое приятное</p>
-          <h2>Тогда выбери, как мы проведём этот день</h2>
-
-          <div class="date-options">
-            <button
-              class="date-card"
-              type="button"
-              data-choice="Пикник и кино под открытым небом"
-            >
-              <span class="date-icon" aria-hidden="true">🧺</span>
-              <span class="date-copy">
-                <strong>Пикник и кино под открытым небом</strong>
-                <span>
-                  Сначала что-нибудь вкусное, плед, спокойная атмосфера, а потом фильм
-                  под вечерним небом.
-                </span>
+        <div class="date-options">
+          <button class="date-card" type="button" data-choice="Пикник и кино под открытым небом">
+            <span class="date-icon" aria-hidden="true">🧺</span>
+            <span class="date-copy">
+              <strong>Пикник и кино под открытым небом</strong>
+              <span>
+                Сначала что-нибудь вкусное, плед, спокойная атмосфера, а потом фильм
+                под вечерним небом.
               </span>
-            </button>
+            </span>
+          </button>
 
-            <button class="date-card" type="button" data-choice="Котокафе и прогулка по парку">
-              <span class="date-icon" aria-hidden="true">☕</span>
-              <span class="date-copy">
-                <strong>Котокафе и прогулка по парку</strong>
-                <span>
-                  Коты, чай/кофе, немного уюта, а потом спокойная прогулка там, где
-                  можно просто болтать обо всём.
-                </span>
+          <button class="date-card" type="button" data-choice="Котокафе и прогулка по парку">
+            <span class="date-icon" aria-hidden="true">☕</span>
+            <span class="date-copy">
+              <strong>Котокафе и прогулка по парку</strong>
+              <span>
+                Коты, чай/кофе, немного уюта, а потом спокойная прогулка там, где
+                можно просто болтать обо всём.
               </span>
-            </button>
+            </span>
+          </button>
 
-            <button class="date-card" type="button" data-choice="Зиплайн и маленькое приключение">
-              <span class="date-icon" aria-hidden="true">🌤️</span>
-              <span class="date-copy">
-                <strong>Зиплайн и маленькое приключение</strong>
-                <span>
-                  Немного адреналина, красивые виды и свидание, которое точно не будет
-                  обычным.
-                </span>
+          <button class="date-card" type="button" data-choice="Зиплайн и маленькое приключение">
+            <span class="date-icon" aria-hidden="true">🌤️</span>
+            <span class="date-copy">
+              <strong>Зиплайн и маленькое приключение</strong>
+              <span>
+                Немного адреналина, красивые виды и свидание, которое точно не будет
+                обычным.
               </span>
-            </button>
-          </div>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="screen" data-screen="final" hidden>
+        <p class="eyebrow">ура. очень ура</p>
+        <h2>Я очень рад, что ты согласилась.</h2>
+        <p class="lead">Значит, 12 июля — наш день.</p>
+
+        <div class="plan" aria-live="polite">
+          <span>Наш план:</span>
+          <strong id="selectedPlan">Пикник и кино под открытым небом</strong>
         </div>
 
-        <div class="screen" data-screen="final" hidden>
-          <p class="eyebrow">ура. очень ура</p>
-          <h2>Я очень рад, что ты согласилась.</h2>
-          <p class="lead">Значит, 12 июля — наш день.</p>
+        <p class="note">
+          Теперь мне осталось только постараться сделать этот день правда классным.
+        </p>
 
-          <div class="plan" aria-live="polite">
-            <span>Наш план:</span>
-            <strong id="selectedPlan">Пикник и кино под открытым небом</strong>
-          </div>
+        <button class="btn btn-small" type="button" data-next="choices">Вернуться к выбору</button>
+      </div>
+    </section>
+  </main>
 
-          <p class="note">
-            Теперь мне осталось только постараться сделать этот день правда классным.
-          </p>
+  <script src="script.js"></script>
+</body>
 
-          <button class="btn btn-small" type="button" data-next="choices">Вернуться к выбору</button>
-        </div>
-      </section>
-    </main>
-
-    <script src="script.js"></script>
-  </body>
 </html>
